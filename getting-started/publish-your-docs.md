@@ -6,6 +6,8 @@ icon: layer-group
 
 TrueTwin relies on several languages and server technologies to combine a physical device with a virtual one. The IoT MQTT standard for publishing and subscribing to events is the part that holds all the rest together.&#x20;
 
+<figure><img src="../.gitbook/assets/digitalMaterial.webp" alt=""><figcaption></figcaption></figure>
+
 ### MQTT Servers
 
 Two different servers were chosen to provide the event signalling. One is HiveMQ, which is a free cloud-hosted service . The other is Mosquitto, which is a open project run locally. They can be used individually or at the same time.
