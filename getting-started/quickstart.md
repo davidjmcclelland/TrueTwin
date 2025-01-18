@@ -1,11 +1,9 @@
 ---
-icon: bullseye-arrow
+icon: binoculars
 description: Description of the overall goal of the TrueTwin project
 ---
 
 # Overview
-
-### Overview
 
 TrueTwin is a collection of several sub-projects that are designed to work together to create a visceral connection between the physical world and a virtual one. There are several goals that can be achieved by this project if it is completed successfully:
 
