@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to TrueTwin](README.md)
+* [TrueTwin](README.md)
 
 ## About This Project
 
