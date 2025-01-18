@@ -12,6 +12,6 @@
 * [Mosquitto Server](projects/server.md)
 * [Paho MQTT RPi Client](projects/paho-mqtt-rpi-client.md)
 * [React MQTT](projects/react-mqtt.md)
-* [MQTT JS HiveMQ Cloud](projects/MQTT-JS-HiveMQ-Cloud-Server.md)
+* [MQTT JS HiveMQ Cloud](projects/mqtt-js-hivemq-cloud-server.md)
 * [Browser Data 2D (Unity)](projects/browser-data-2d.md)
 * [MQTT Client Examples](projects/mqtt-client-examples.md)
