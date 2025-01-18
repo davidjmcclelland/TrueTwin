@@ -1,10 +1,8 @@
 ---
-icon: globe-pointer
+icon: layer-group
 ---
 
 # Architecture
-
-Architecture
 
 TrueTwin relies on several languages and server technologies to combine a physical device with a virtual one. The IoT MQTT standard for publishing and subscribing to events is the part that holds all the rest together.&#x20;
 
