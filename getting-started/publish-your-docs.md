@@ -44,7 +44,7 @@ Browser Data 2D
 
 The Unity runtime is contained in a web browser. A VR experience can be loaded in a headset via the browser.
 
-Test/iteration tools
+### Test/iteration tools
 
 Before approaching the Raspberry Pi and Unity implementations it was important to test the servers to ensure that a stable, reproducible connection could be achieved at any time.  An existing project (React MQTT) had already  been used for this purpose. Additional MQTT clients were used from MQTT Client Examples (HiveMQ). These offered the convenience of running in a browser and displaying messages. The Mosquitto Server provides CLI-driven publish and subscribe clients that are useful for verifying that the server is running and responding.
 
