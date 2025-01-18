@@ -1,5 +1,5 @@
 ---
-icon: pen-to-square
+icon: server
 ---
 
 # Mosquitto Server
