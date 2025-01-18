@@ -9,9 +9,9 @@
 
 ## Component Projects
 
-* [Mosquitto Server](projects/editor.md)
+* [Mosquitto Server](projects/server.md)
 * [Paho MQTT RPi Client](projects/markdown.md)
-* [React MQTT](projects/images-and-media.md)
+* [React MQTT](projects/react-mqtt.md)
 * [MQTT JS HiveMQ Cloud](projects/interactive-blocks.md)
 * [Browser Data 2D (Unity)](projects/openapi.md)
-* [MQTT Client Examples](projects/integrations.md)
+* [MQTT Client Examples](projects/mqtt-client-examples.md)
