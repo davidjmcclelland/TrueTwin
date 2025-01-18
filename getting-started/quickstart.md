@@ -4,9 +4,7 @@ icon: binoculars
 
 # Overview
 
-
-
-<figure><img src="../.gitbook/assets/digitalMaterial.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/PiCloudTwin4.webp" alt=""><figcaption></figcaption></figure>
 
 TrueTwin is a collection of several sub-projects that are designed to work together to create a visceral connection between the physical world and a virtual one. There are several goals that can be achieved by this project if it is completed successfully:
 
