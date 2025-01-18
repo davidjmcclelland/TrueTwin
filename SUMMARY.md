@@ -4,8 +4,8 @@
 
 ## About This Project
 
-* [Overview](about/quickstart.md)
-* [Architecture](about/publish-your-docs.md)
+* [Overview](about/overview.md)
+* [Architecture](about/architecture.md)
 
 ## Component Projects
 
