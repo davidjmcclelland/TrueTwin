@@ -2,16 +2,16 @@
 
 * [Welcome to TrueTwin](README.md)
 
-## Getting Started
+## About This Project
 
-* [Quickstart](getting-started/quickstart.md)
-* [Publish your docs](getting-started/publish-your-docs.md)
+* [Overview](about-this-project/overview.md)
+* [Architecture](about-this-project/architecture.md)
 
-## Basics
+## Component Projects
 
-* [Editor](basics/editor.md)
-* [Markdown](basics/markdown.md)
-* [Images & media](basics/images-and-media.md)
-* [Interactive blocks](basics/interactive-blocks.md)
-* [OpenAPI](basics/openapi.md)
-* [Integrations](basics/integrations.md)
+* [Mosquitto Server](component-projects/server.md)
+* [Paho MQTT RPi Client](component-projects/rpi-client.md)
+* [React MQTT](component-projects/react-mqtt.md)
+* [MQTT JS HiveMQ Cloud Server](component-projects/hivemq.md)
+* [Browser Data 2D (Unity)](component-projects/browser.md)
+* [MQTT Client Examples](component-projects/mqtt-client-examples.md)
