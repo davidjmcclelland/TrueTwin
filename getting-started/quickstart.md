@@ -1,6 +1,6 @@
 ---
-description: Description of the overall goal of the TrueTwin project
 icon: bullseye-arrow
+description: Description of the overall goal of the TrueTwin project
 ---
 
 # Overview
@@ -14,10 +14,6 @@ TrueTwin is a collection of several sub-projects that are designed to work toget
 * A loose illustration of the benefit of a digital twin to provide practical immersive training.
 
 
-
-{% hint style="info" %}
-Want to learn about writing content from scratch? Head to the [Basics](https://github.com/GitbookIO/onboarding-template/blob/main/getting-started/broken-reference/README.md) section to learn more.
-{% endhint %}
 
 
 
