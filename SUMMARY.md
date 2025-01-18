@@ -4,14 +4,14 @@
 
 ## About This Project
 
-* [Overview](about-this-project/overview.md)
-* [Architecture](about-this-project/architecture.md)
+* [Overview](getting-started/quickstart.md)
+* [Architecture](getting-started/publish-your-docs.md)
 
 ## Component Projects
 
-* [Mosquitto Server](component-projects/server.md)
-* [Paho MQTT RPi Client](component-projects/rpi-client.md)
-* [React MQTT](component-projects/react-mqtt.md)
-* [MQTT JS HiveMQ Cloud Server](component-projects/hivemq.md)
-* [Browser Data 2D (Unity)](component-projects/browser.md)
-* [MQTT Client Examples](component-projects/mqtt-client-examples.md)
+* [Mosquitto Server](basics/editor.md)
+* [Paho MQTT RPi Client](basics/markdown.md)
+* [React MQTT](basics/images-and-media.md)
+* [MQTT JS HiveMQ Cloud Server](basics/interactive-blocks.md)
+* [Browser Data 2D (Unity)](basics/openapi.md)
+* [MQTT Client Examples](basics/integrations.md)
