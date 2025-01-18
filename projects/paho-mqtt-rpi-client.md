@@ -1,5 +1,5 @@
 ---
-icon: markdown
+icon: raspberry-pi
 ---
 
 # Paho MQTT RPi Client
