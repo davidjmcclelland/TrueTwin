@@ -1,5 +1,5 @@
 ---
-icon: plug-circle-plus
+icon: browsers
 ---
 
 # MQTT Client Examples
