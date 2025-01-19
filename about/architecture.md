@@ -55,3 +55,5 @@ React MQTT, MQTT Client Examples, MQTT JS HiveMQ Cloud
 #### Execution Environment
 
 Browser, CLI on Linux PC
+
+[The list of projects used to build and support TrueTwin](https://github.com/stars/davidjmcclelland/lists/truetwin-project)

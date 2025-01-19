@@ -4,7 +4,7 @@ icon: server
 
 # Mosquitto Server
 
-GitBook has a powerful block-based editor that allows you to seamlessly create, update, and enhance your content.
+Mosquitto server can be installed on your own hardware in your local network. This is often done to permit any kind of testing desired without worrying about a proprietary cloud offering having limitations. It is a very lightweight service that can even run on a Raspberry Pi 4.&#x20;
 
 <figure><img src="https://gitbookio.github.io/onboarding-template-images/editor-hero.png" alt=""><figcaption></figcaption></figure>
 
