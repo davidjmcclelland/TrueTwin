@@ -6,8 +6,8 @@ description: Installation and Configuration details
 
 #### Assumptions:&#x20;
 
-\* Docker Installed
+\*  Docker Installed
 
-\* Sudo-level account, firewall and terminal access on server
+\*  Sudo-level account, firewall and terminal access on server
 
 ####
