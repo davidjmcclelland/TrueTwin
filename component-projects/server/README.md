@@ -2,9 +2,9 @@
 icon: server
 ---
 
-# Mosquitto Server
+# MQTT Server
 
-<figure><img src="../.gitbook/assets/trueTwinMQTT.webp" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/trueTwinMQTT.webp" alt=""><figcaption></figcaption></figure>
 
 Mosquitto server is a fairly simple open-source messaging broker. It can be installed on a cloud, on-prem, an internal server or even a Raspberry Pi SBC. It is easy enough to set up and work with that several of these options were used in the development of this project to facilitate testing and development. There are more robust industrial servers that provide higher scale and availability levels using the same protocol.&#x20;
 
