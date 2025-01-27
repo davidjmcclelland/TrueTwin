@@ -9,7 +9,7 @@
 
 ## Component Projects
 
-* [Mosquitto Server](projects/server.md)
+* [MQTT Server](projects/server.md)
 * [Paho MQTT RPi Client](projects/paho-mqtt-rpi-client.md)
 * [React MQTT](projects/react-mqtt.md)
 * [MQTT JS HiveMQ Cloud](projects/mqtt-js-hivemq-cloud-server.md)
