@@ -1,5 +1,5 @@
 ---
-icon: hand-wave
+icon: people-pants
 cover: .gitbook/assets/digitalMaterial.webp
 coverY: 0
 layout:
