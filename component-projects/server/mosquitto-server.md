@@ -29,3 +29,7 @@ mosquitto_pub -h localhost -t "myTopic" -m "Hello World!"
 ```
 mosquitto_sub -h localhost -t "myTopic"
 ```
+
+
+
+<figure><img src="../../.gitbook/assets/mosquittoTest.png" alt=""><figcaption><p>Mosquitto s<em>ub and mosquitto_pub in action</em></p></figcaption></figure>
