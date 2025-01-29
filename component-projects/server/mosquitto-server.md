@@ -1,6 +1,6 @@
 ---
-description: Installation and Configuration details
 icon: mosquito
+description: Installation and Configuration details
 ---
 
 # Mosquitto Server
@@ -18,3 +18,14 @@ The server doesn't have a UI, so the only evidence that it is running is via a D
 
 <figure><img src="../../.gitbook/assets/mosquittoInPortainer.png" alt=""><figcaption><p>Portainer view with Mosquitto Server Selected</p></figcaption></figure>
 
+#### Use of the Test Clients
+
+The test clients can be run in a terminal to establish a publisher and a subscriber that connect to and utilize the server. They are included in the server install.
+
+```
+mosquitto_pub -h localhost -t "myTopic" -m "Hello World!"
+```
+
+```
+mosquitto_sub -h localhost -t "myTopic"
+```
