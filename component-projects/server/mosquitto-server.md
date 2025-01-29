@@ -1,5 +1,6 @@
 ---
 description: Installation and Configuration details
+icon: mosquito
 ---
 
 # Mosquitto Server
