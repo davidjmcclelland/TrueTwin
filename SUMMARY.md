@@ -11,6 +11,7 @@
 
 * [MQTT Server](projects/server.md)
   * [Mosquitto Server](component-projects/server/mosquitto-server.md)
+  * [RabbitMQ AMQT Server](component-projects/server/rabbitmq-amqt-server.md)
 * [Paho MQTT RPi Client](projects/paho-mqtt-rpi-client.md)
 * [React MQTT](projects/react-mqtt.md)
 * [MQTT JS HiveMQ Cloud](projects/mqtt-js-hivemq-cloud-server.md)
