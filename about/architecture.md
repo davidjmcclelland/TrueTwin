@@ -13,18 +13,29 @@ TrueTwin relies on several languages and server technologies to combine a physic
 ```mermaid
 ---
 config:
-  theme: neo-dark
+  theme: false
+  themeVariables:
+    darkmode: false
+    mainBkg: "#555"
+    actorBkg: "#AAA"
+    primaryBorderColor: "#555"
+    labelTextColor: "#FFF"
+    fontSize: "24px"
 ---
 sequenceDiagram
+  actor VR user
   participant Virtual as Virtual
   participant Broker
   participant Device as Device
+  actor Touch user
   
+  VR user ->> Virtual: toggle light off
+  Virtual ->> Broker: lightswitch off 
+  Broker ->> Device: lightswitch off
+  Touch user ->> Device: toggle light on
+  Device -->> Broker: lightswitch on
+  Broker -) Virtual: lightswitch on
 
-  Virtual ->> Broker: light off 
-  Broker ->> Device: light off
-  Device -->> Broker: light on
-  Broker -) Virtual: light on
 ```
 
 ### MQTT Servers
