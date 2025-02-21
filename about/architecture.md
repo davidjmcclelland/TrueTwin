@@ -53,7 +53,31 @@ graph TD
 
 ```
 
+Software
 
+```mermaid
+---
+config:
+  fontSize: "24px"
+---
+graph TD
+  subgraph Python
+    R[Raspberry Pi] --> P["(Python) paho-mqtt-rpi-client"]
+    N@{ shape: comment, label: "lightSwitch.py\nfor I/O and\nlightStatus.py for messaging"}
+  end
+  subgraph Servers on Docker
+    P <--> S[Rabbit MQ Or Mosquitto]
+    W[HTTP Server Publishing WebXR]
+  end
+    B[Browser] <--> WS[Web Sockets]
+    WS <--> S
+  subgraph Unity
+    C[C# and Javascript code] --> XR[WebXR Export]
+    XR .-> W
+  end
+  W <--> B
+
+```
 
 ### MQTT Servers
 
