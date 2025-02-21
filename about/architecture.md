@@ -58,25 +58,33 @@ Software
 ```mermaid
 ---
 config:
-  fontSize: "24px"
+  fontSize: 24px
+  layout: elk
 ---
-graph TD
-  subgraph Python
-    R[Raspberry Pi] --> P["(Python) paho-mqtt-rpi-client"]
-    N@{ shape: comment, label: "lightSwitch.py\nfor I/O and\nlightStatus.py for messaging"}
+flowchart TD
+ subgraph Python["Python"]
+        P["(Python) paho-mqtt-rpi-client"]
+        R["Raspberry Pi"]
+        N["lightSwitch.py
+for I/O and
+lightStatus.py for messaging"]
   end
-  subgraph Servers on Docker
-    P <--> S[Rabbit MQ Or Mosquitto]
-    W[HTTP Server Publishing WebXR]
+ subgraph subGraph1["Servers on Docker"]
+        S["Rabbit MQ Or Mosquitto"]
+        W["HTTP Server Publishing WebXR"]
   end
-    B[Browser] <--> WS[Web Sockets]
+ subgraph Unity["Unity"]
+        XR["WebXR Export"]
+        C["C# and Javascript code"]
+  end
+    R --> P
+    P <--> S
+    B["Browser"] <--> WS["Web Sockets"]
     WS <--> S
-  subgraph Unity
-    C[C# and Javascript code] --> XR[WebXR Export]
-    XR .-> W
-  end
-  W <--> B
-
+    C --> XR
+    XR -.-> W
+    W <--> B
+    N@{ shape: comment}
 ```
 
 ### MQTT Servers
