@@ -4,11 +4,11 @@ icon: layer-group
 
 # Architecture
 
-TrueTwin relies on several languages and server technologies to combine a physical device with a virtual one. The IoT MQTT standard for publishing and subscribing to events is the part that holds all the rest together.&#x20;
+TrueTwin relies on several languages and server technologies to combine a physical device with a virtual one. The IoT MQTT standard for publishing and subscribing to events is the part that holds all the rest together.
 
 <figure><img src="../.gitbook/assets/digitalMaterial.webp" alt=""><figcaption></figcaption></figure>
 
-###
+### Sequence of Interactions
 
 ```mermaid
 ---
@@ -37,6 +37,24 @@ sequenceDiagram
   Broker -) Virtual: lightswitch on
 
 ```
+
+### Components and Responsibilities
+
+#### Hardware
+
+```mermaid
+
+graph TD
+
+  R:[Raspberry Pi 4] <--> B:[breadboard]
+  N@{ shape: comment, label: "Hosts Python Code\nfor I/O and\nmessaging"}
+  B:[breadboard] <--> U:[User Inputs]
+  B:[breadboard] --> I:[Indicators]
+
+```
+
+
+
 ### MQTT Servers
 
 Several servers were chosen to test their event signalling capabilities, as well as their ease of configuration, maintenance and scalability. One is HiveMQ, which is a free cloud-hosted service . Another is Mosquitto, which is an open source project. Third is RabbitMQ, which uses a different protocol and may be able to work with MQTT as well. The self-hosted servers are run locally on a linux server from Docker containers.
@@ -75,7 +93,7 @@ The Unity runtime is contained in a web browser. A VR experience can be loaded i
 
 ### Test/iteration tools
 
-Before approaching the Raspberry Pi and Unity implementations it was important to test the servers to ensure that a stable, reproducible connection could be achieved at any time.  An existing project (React MQTT) had already  been used for this purpose. Additional MQTT clients were used from MQTT Client Examples (HiveMQ). These offered the convenience of running in a browser and displaying messages. The Mosquitto Server provides CLI-driven publish and subscribe clients that are useful for verifying that the server is running and responding.
+Before approaching the Raspberry Pi and Unity implementations it was important to test the servers to ensure that a stable, reproducible connection could be achieved at any time. An existing project (React MQTT) had already been used for this purpose. Additional MQTT clients were used from MQTT Client Examples (HiveMQ). These offered the convenience of running in a browser and displaying messages. The Mosquitto Server provides CLI-driven publish and subscribe clients that are useful for verifying that the server is running and responding.
 
 #### Repo
 
