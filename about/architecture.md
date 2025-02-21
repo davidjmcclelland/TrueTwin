@@ -8,36 +8,6 @@ TrueTwin relies on several languages and server technologies to combine a physic
 
 <figure><img src="../.gitbook/assets/digitalMaterial.webp" alt=""><figcaption></figcaption></figure>
 
-###
-
-```mermaid
----
-config:
-  theme: false
-  themeVariables:
-    darkmode: false
-    mainBkg: "#555"
-    actorBkg: "#AAA"
-    primaryBorderColor: "#555"
-    labelTextColor: "#FFF"
-    fontSize: "24px"
----
-sequenceDiagram
-  actor VR user
-  participant Virtual as Virtual
-  participant Broker
-  participant Device as Device
-  actor Touch user
-  
-  VR user ->> Virtual: toggle light off
-  Virtual ->> Broker: lightswitch off 
-  Broker ->> Device: lightswitch off
-  Touch user ->> Device: toggle light on
-  Device -->> Broker: lightswitch on
-  Broker -) Virtual: lightswitch on
-
-```
-
 ### MQTT Servers
 
 Several servers were chosen to test their event signalling capabilities, as well as their ease of configuration, maintenance and scalability. One is HiveMQ, which is a free cloud-hosted service . Another is Mosquitto, which is an open source project. Third is RabbitMQ, which uses a different protocol and may be able to work with MQTT as well. The self-hosted servers are run locally on a linux server from Docker containers.
