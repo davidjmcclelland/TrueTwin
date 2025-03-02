@@ -2,7 +2,7 @@
 icon: rabbit-running
 ---
 
-# RabbitMQ AMQT Server
+# RabbitMQ Docker Container
 
 Describe integration with AMQT
 
@@ -20,7 +20,22 @@ rabbitmq:4.0-management
 It is sometimes preferred to save the setup details in a yaml file and use Docker Compose to pull and install the image:
 
 ```yaml
-// Some yaml
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=username
+      - RABBITMQ_DEFAULT_PASS=YoUrPaSsWoRd
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+networks:
+  default:
+    driver: bridge
 ```
 
 Once installed and running, the administration UI will be found at the specified port. The 15672 port is used for shttp connections.

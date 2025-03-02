@@ -97,14 +97,14 @@ Since the entire project environment is contained inside a LAN without internet 
 
 ### Device(s)
 
-For now, there is a single physical device used. It is a Raspberry Pi 4 outfitted with a breadboard containing a switch and an LED light. A Python program is running on the device that controls the LED light via the switch. This program calls on another that connects and sends a message to the MQTT server whenever the LED light changes (on and off).
+Any internet-connected device that can run Python could be used. A Raspberry Pi 4 outfitted with a breadboard containing a switch and an LED light is the starting point. Python uses GPIO to control the switch and light. That program calls another one that connects and messages the MQTT server based on events, such as pressing the switch.
 
 ### VR Environment
 
-Both Unity and Unreal Engine were explored for their ability to integrate in the TrueTwin project scenario. Unity won on the strength of its built-in ability to pass data back and forth to web browsers using the WebX standard.
+Both Unity and Unreal Engine were explored for their ability to integrate in the TrueTwin project scenario. Unity won on the strength of its built-in ability to pass data back and forth to web browsers using the WebGL standard.
 
 ### Test/iteration tools
 
-Before approaching the Raspberry Pi and Unity implementations it was important to test the servers to ensure that a stable, reproducible connection could be achieved at any time. An existing project (React MQTT) had already been used for this purpose. Additional MQTT clients were used from MQTT Client Examples (HiveMQ). These offered the convenience of running in a browser and displaying messages. The Mosquitto Server provides CLI-driven publish and subscribe clients that are useful for verifying that the server is running and responding.
+Before approaching the Raspberry Pi and Unity implementations it was important to test the servers to ensure that a stable, reproducible connection could be achieved at any time. An existing project (React MQTT) served this purpose. Additional clients were used from the MQTT Client Examples provided by HiveMQ. These offered the convenience of running in a browser and displaying messages. The Mosquitto Server provides CLI-driven publish and subscribe clients that are also useful for verifying that the server is running and responding from the server itself.
 
-[The list of projects used to build and support TrueTwin](https://github.com/stars/davidjmcclelland/lists/truetwin-project)
+[The list of projects used to build and support TrueTwin](https://github.com/stars/davidjmcclelland/lists/truetwin-project).

@@ -6,7 +6,7 @@ icon: server
 
 <figure><img src="../.gitbook/assets/trueTwinMQTT.webp" alt=""><figcaption></figcaption></figure>
 
-Mosquitto server is a fairly simple open-source messaging broker. It can be installed on a cloud, on-prem, an internal server or even a Raspberry Pi SBC. It is easy enough to set up and work with that several of these options were used in the development of this project to facilitate testing and development. There are more robust industrial servers that provide higher scale and availability levels using the same protocol.&#x20;
+Mosquitto server is a popular open-source messaging broker. It can be run from a cloud, on-prem, an internal server or even a Raspberry Pi SBC. There are more robust industrial servers that provide higher scale and availability levels using the same protocol. These are not within the scope of my project.
 
 ### Why use MQTT?
 
@@ -31,6 +31,12 @@ Installing and running Mosquitto server directly on any PC is not difficult. Thi
 ### Mosquitto Docker Container
 
 This method is preferred because it removes the need to install and manage the server, and allows for maintaining and managing the service in a visible dashboard environment. The same test clients work with this setup. I can spin up the container when I intend to demo.
+{% endstep %}
+
+{% step %}
+### RabbitMQ Message Broker
+
+RabbitMQ can run on any environment Mosquitto can. It supports more protocols than MQTT  such as AMQP. It claims to have more options to define how messages are published, such as routing, filtering, streaming and federation. It also supports acknowledgement and clustering. The software is open source, but is also offered as a service commercially.
 {% endstep %}
 {% endstepper %}
 
