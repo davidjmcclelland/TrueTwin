@@ -36,7 +36,7 @@ This method is preferred because it removes the need to install and manage the s
 {% step %}
 ### RabbitMQ Message Broker
 
-RabbitMQ can run on any environment Mosquitto can. It supports more protocols than MQTT  such as AMQP. It claims to have more options to define how messages are published, such as routing, filtering, streaming and federation. It also supports acknowledgement and clustering. The software is open source, but is also offered as a service commercially.
+RabbitMQ can run on any environment Mosquitto can. It supports additional protocols, such as AMQP. It claims to have more options to define how messages are published, such as routing, filtering, streaming and federation. It also supports acknowledgement and clustering. The software is open source, but is also offered as a service commercially.
 {% endstep %}
 {% endstepper %}
 

@@ -17,7 +17,7 @@ docker run -it --rm --name rabbitmq
 rabbitmq:4.0-management
 ```
 
-It is sometimes preferred to save the setup details in a yaml file and use Docker Compose to pull and install the image:
+It is preferred to save the setup details in a yaml file and use Docker Compose to pull and install the image:
 
 ```yaml
 version: '3'
@@ -26,13 +26,14 @@ services:
   rabbitmq:
     image: rabbitmq:management
     container_name: rabbitmq
+    hostname: 'rabbit-1'
     environment:
       - RABBITMQ_DEFAULT_USER=username
       - RABBITMQ_DEFAULT_PASS=YoUrPaSsWoRd
     ports:
       - "5672:5672"
       - "15672:15672"
-
+    restart: "always"
 networks:
   default:
     driver: bridge
